@@ -1,4 +1,5 @@
 lxml
-jupyterlab~=4.0.0
-https://raw.githubusercontent.com/yxzhan/extension-examples/main/cell-toolbar/dist/jupyterlab_examples_cell_toolbar-0.1.4.tar.gz
+jupyterlab~=4.2.0
+# jupyterlab-urdf
 git+https://github.com/yxzhan/jupyterlab-urdf.git@dev
+https://raw.githubusercontent.com/yxzhan/extension-examples/main/cell-toolbar/dist/jupyterlab_examples_cell_toolbar-0.1.4.tar.gz
