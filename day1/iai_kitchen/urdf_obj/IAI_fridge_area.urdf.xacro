@@ -44,7 +44,7 @@
     <origin rpy="0 0 0" xyz="0.0 -0.0 -0.4175 "/>
   </xacro:iai_drawer_60_29>
 
-  <xacro:iai_fridge name="iai_fridge" parent="${name}">
+  <xacro:iai_fridge name="${name}_iai_fridge" parent="${name}">
     <origin xyz="0 0 0.25" rpy="0 0 0" />
   </xacro:iai_fridge>
   </xacro:macro>

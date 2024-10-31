@@ -24,28 +24,57 @@
     <xacro:if value="${simulated}">
         <link name="world" />
         <joint name="world_room_joint" type="fixed">
-            <origin xyz="0.0 0.03 0 " rpy="0 0 ${pi/2}" />
+            <origin xyz="0.0 0.03 0 " rpy="0 0 0" />
             <parent link="world" />
             <child link="room_link" />
         </joint>
     </xacro:if>
 
     <!-- Your code goes from here -->
+
+    <!-- Table -->
+    <xacro:iai_table_1 name="table_1" parent="room_link">
+        <origin xyz="1.5 0.75 0" rpy="0 0 ${pi/2}" />
+    </xacro:iai_table_1>
+
+    <!-- Chair -->
+    <xacro:jokkmokk_chair name="chair_1" parent="room_link">
+        <origin xyz="1.5 -0.75 0.5535" rpy="0 0 0" />
+    </xacro:jokkmokk_chair>
     
     <!-- fridge -->
     <xacro:iai_fridge_area name="fridge_1" parent="room_link">
-        <origin xyz="0 0 0" rpy="0 0 ${pi}" />
+        <origin xyz="-1 0 0" rpy="0 0 0" />
     </xacro:iai_fridge_area>
 
-    <!-- Dishwasher -->
-    <xacro:iai_dish_washer name="dishwaser_1" parent="room_link">
-        <origin xyz="-0.3 -1 0.4" rpy="0 0 ${pi}" />
-    </xacro:iai_dish_washer>
+     <!-- Oven -->
+    <xacro:iai_oven_area name="oven_1" parent="room_link">
+        <origin xyz="-1 -1.6 0" rpy="0 0 0" />
+    </xacro:iai_oven_area>
 
-    <!-- Oven -->
-    <xacro:iai_oven name="oven_1" parent="room_link">
-        <origin xyz="-0.3 0.4 0.4" rpy="0 0 ${pi}" />
-    </xacro:iai_oven>
+    <!-- Stove -->
+    <xacro:iai_kitchen_island name="stoves_1" parent="room_link">
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </xacro:iai_kitchen_island>
+
+    <!-- Sink -->
+    <xacro:iai_sink_area name="sink_area" parent="room_link">
+        <origin xyz="0 -2.5 0" rpy="0 0 0" />
+    </xacro:iai_sink_area>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </robot>
