@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# pip install -r requirements.txt
+
+# Hacking of the jupyterlab workspace,
+# to solve conflict with multiple instances on binderhub
+for workspace_file in *.jupyterlab-workspace; do
+  filename=$(basename "$workspace_file" .jupyterlab-workspace)
+  cp $workspace_file /tmp
+  sed -i "s/\"metadata\":{[^{]*\"id\":\"[^\"]*\"/\"metadata\":{\"id\":\"${filename}-$HOSTNAME\"/" "/tmp/$workspace_file"
+  cat /tmp/$workspace_file > $workspace_file
+done
+# Run the command passed to the docker run command
+exec "$@"
