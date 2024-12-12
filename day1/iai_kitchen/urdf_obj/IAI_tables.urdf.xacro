@@ -34,7 +34,7 @@
         </geometry>
       </visual>
       <collision>
-        <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+        <origin xyz="0.0 0.0 0.4" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://iai_kitchen/meshes/jokkmokk/JokkmokkTable.obj"/>
         </geometry>

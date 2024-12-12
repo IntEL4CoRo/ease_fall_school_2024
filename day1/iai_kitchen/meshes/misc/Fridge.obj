@@ -1,6 +1,6 @@
 # Blender v2.82 (sub 7) OBJ File: ''
 # www.blender.org
-mtllib Fridge2.mtl
+mtllib Fridge.mtl
 o Shape_IndexedFaceSet.001_Shape_IndexedFaceSet.184
 v -0.183594 -0.230453 0.451241
 v 0.244979 0.262549 0.455853

@@ -5,5 +5,5 @@ ollama
 langchain-ollama
 jupyter-ai
 # jupyterlab-urdf
-git+https://github.com/yxzhan/jupyterlab-urdf.git@dev
+git+https://github.com/yxzhan/jupyterlab-urdf.git@2f7314069bf245cd60aa14bab8f4d917131755c5
 https://raw.githubusercontent.com/yxzhan/extension-examples/main/cell-toolbar/dist/jupyterlab_examples_cell_toolbar-0.1.4.tar.gz
