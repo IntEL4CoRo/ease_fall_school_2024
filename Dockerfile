@@ -21,5 +21,6 @@ RUN ln -s ${HOME}/Multiverse-World/iai_apartment ${HOME}/ease_fall_school_2024/d
 RUN ln -s ${HOME}/Multiverse-World/iai_apartment/urdf/apartment.xacro ${HOME}/ease_fall_school_2024/day1/iai_apartment.xacro
 
 # --- Entrypoint --- #
+COPY --chown=${NB_USER}:users start /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 CMD [ "start-notebook.sh" ]
